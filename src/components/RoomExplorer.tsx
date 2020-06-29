@@ -1,4 +1,4 @@
-import React, { useState, useRef, RefObject } from 'react';
+import React, { useState, RefObject } from 'react';
 
 export interface RoomItem {
   name: string
@@ -33,7 +33,7 @@ export interface RoomExplorerProps {
 const RoomExplorer: React.FC<RoomExplorerProps> = ({ room }) => {
 
   const [openSection, setOpenSection] = useState<('introduction' | 'cheatsheet' | 'items' | 'conclusion' | '')>('');
-  const [selectedItem, setSelectedItem] = useState<RoomItem>()
+  // const [selectedItem, setSelectedItem] = useState<RoomItem>()
 
   const refs = room.items.reduce<{[key: string]: RefObject<HTMLDivElement>}>((acc, value) => {
     acc[value.name] = React.createRef();
