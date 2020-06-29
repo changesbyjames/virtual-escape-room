@@ -33,7 +33,7 @@ export interface RoomExplorerProps {
 const RoomExplorer: React.FC<RoomExplorerProps> = ({ room }) => {
 
   const [openSection, setOpenSection] = useState<('introduction' | 'cheatsheet' | 'items' | 'conclusion' | '')>('');
-  // const [selectedItem, setSelectedItem] = useState<RoomItem>()
+  const [selectedItem, setSelectedItem] = useState<string>()
 
   const refs = room.items.reduce<{[key: string]: RefObject<HTMLDivElement>}>((acc, value) => {
     acc[value.name] = React.createRef();
@@ -41,6 +41,8 @@ const RoomExplorer: React.FC<RoomExplorerProps> = ({ room }) => {
   }, {});
 
   const handleClick = (id: string) => {
+    setOpenSection('items');
+    setSelectedItem(id);
     const ref = refs[id];
     if (!ref || !ref.current) return;
     ref.current.scrollIntoView({
@@ -141,7 +143,7 @@ const RoomExplorer: React.FC<RoomExplorerProps> = ({ room }) => {
             { 
               room.items.map(i => <div className="border-b" key={i.name} ref={refs[i.name]}>
                 <div className={`${room.actions[i.name] ? 'border-b' : ''} mb-3 m-4`}>
-                  <strong><p className="text-lg leading-6 text-gray-900 pb-3">{i.name}</p></strong>
+                  <strong><p className={`text-lg leading-6 ${i.name === selectedItem ? 'text-blue-700' : 'text-gray-900'} pb-3`}>{i.name}</p></strong>
                   <p className="text-md leading-6 text-gray-700 pb-3">{i.description}</p>
                   { i.dependantOn ? <p className="text-md leading-6 text-gray-900 p-2 px-4 mb-4 bg-gray-100 rounded"><strong>Dependant on: </strong>{i.dependantOn}</p> : null }
                 </div>
