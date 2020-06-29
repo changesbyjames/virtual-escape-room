@@ -1,7 +1,4 @@
-import React from 'react';
-import RoomExplorer from './components/RoomExplorer';
-
-const room = {
+{
   "id": "S4E6",
   "name": "The Cullodens' servant quarters",
   "episode": 6,
@@ -12,79 +9,64 @@ const room = {
   "items": [
     {
       "name": "Bed",
-      "description": "It's a simple bed, with no special effort having been made for a mere servant. It hasn't even been kept well- it's on wheels, but only three wheels. One of its legs is scraping the floorboards.",
-      "position": "1"
+      "description": "It's a simple bed, with no special effort having been made for a mere servant. It hasn't even been kept well- it's on wheels, but only three wheels. One of its legs is scraping the floorboards."
     },
     {
       "name": "Bells",
-      "description": "The tray of bells is completely covered. Bells of different sizes are all pressed together. The interesting thing about them, strangely, are not the main bodies of the bells – each bell has a different handle on top by which to hold it. There are circular ones, triangular ones, some that are just vertical sticks of metal, all sorts.",
-      "position": "2"
+      "description": "The tray of bells is completely covered. Bells of different sizes are all pressed together. The interesting thing about them, strangely, are not the main bodies of the bells – each bell has a different handle on top by which to hold it. There are circular ones, triangular ones, some that are just vertical sticks of metal, all sorts."
     },
     {
       "name": "Calendar",
-      "description": "It's a month-by-month calendar, with the previous months torn off. Looks like this is genuinely from Culloden's time. Dates have been crossed off all the way up to the tenth of October. As you examine this date, all of a sudden you hear a furious roar come from behind you.",
-      "position": "7"
+      "description": "It's a month-by-month calendar, with the previous months torn off. Looks like this is genuinely from Culloden's time. Dates have been crossed off all the way up to the tenth of October. As you examine this date, all of a sudden you hear a furious roar come from behind you."
     },
     {
       "name": "Clothes",
-      "description": "For a servant, this guy had a lot of clothes. You wouldn't describe any of them as fancy, exactly, but clearly Culloden liked his employees looking their best. There are suits, all manner of formal shirts, and many ties, both long and bow. Right up the end there's one grey shirt similar to the ones you found in the laundry. They must've been the ones he wore most often.",
-      "position": "3"
+      "description": "For a servant, this guy had a lot of clothes. You wouldn't describe any of them as fancy, exactly, but clearly Culloden liked his employees looking their best. There are suits, all manner of formal shirts, and many ties, both long and bow. Right up the end there's one grey shirt similar to the ones you found in the laundry. They must've been the ones he wore most often."
     },
     {
       "name": "Door",
-      "description": "The door itself is astoundingly normal, so much so that you barely find it worth your time to examine. However, while you waste your time looking at it for clues, something interesting happens- a piece of paper is slipped underneath it towards you. It looks like there's writing on it.",
-      "position": "S2"
+      "description": "The door itself is astoundingly normal, so much so that you barely find it worth your time to examine. However, while you waste your time looking at it for clues, something interesting happens- a piece of paper is slipped underneath it towards you. It looks like there's writing on it."
     },
     {
       "name": "Dresser",
-      "description": "There's nothing on the dresser besides the calendar, and its drawers are empty. The mirror of the dresser is broken, with one shard missing – a very peculiar shard. It's almost perfectly circular. That can't have been done by accident.",
-      "position": "7"
+      "description": "There's nothing on the dresser besides the calendar, and its drawers are empty. The mirror of the dresser is broken, with one shard missing – a very peculiar shard. It's almost perfectly circular. That can't have been done by accident."
     },
     {
       "name": "Floorboards",
-      "description": "That's interesting. For the most part the floorboards look totally ordinary, but at the very ends of each board you see a letter carved into the wood. The board nearest to the door has a Y at one end, Z at the other. The next board has a W and an X. Ah, you see where this is going. Sure enough, there are 13 boards that make up this wooden floor, and from what you can see, each board has two letters of the alphabet at either end, going sequentially. You wonder why someone would do that.",
-      "position": "8"
+      "description": "That's interesting. For the most part the floorboards look totally ordinary, but at the very ends of each board you see a letter carved into the wood. The board nearest to the door has a Y at one end, Z at the other. The next board has a W and an X. Ah, you see where this is going. Sure enough, there are 13 boards that make up this wooden floor, and from what you can see, each board has two letters of the alphabet at either end, going sequentially. You wonder why someone would do that."
     },
     {
       "name": "Flowers",
-      "description": "The lone flower is white. In the full vase, you count seven flowers: two purple, two yellow, two white and one pink.",
-      "position": "8"
+      "description": "The lone flower is white. In the full vase, you count seven flowers: two purple, two yellow, two white and one pink."
     },
     {
       "name": "Laundry",
-      "description": "In this laundry area you see possibly the most primitive washing machine in existence. It must be from the day they were first invented. But you know, it almost looks like you could understand how to use it. There's a dial labelled “Wash strength”, with options ranging from 1 to 5, and inside the machine you count six long-sleeved grey shirts.",
-      "position": "E3"
+      "description": "In this laundry area you see possibly the most primitive washing machine in existence. It must be from the day they were first invented. But you know, it almost looks like you could understand how to use it. There's a dial labelled “Wash strength”, with options ranging from 1 to 5, and inside the machine you count six long-sleeved grey shirts."
     },
     {
       "name": "Linens",
-      "description": "The rack of linens is impeccably stacked, and even labelled. It's split into seven sections, one labelled for each day of the week. Every day has an identical stack of various coloured sheets; these must go to all the bedrooms of the house. They make the guy change the sheets every day? Well, maybe people were a lot dirtier back then.",
-      "position": "6"
+      "description": "The rack of linens is impeccably stacked, and even labelled. It's split into seven sections, one labelled for each day of the week. Every day has an identical stack of various coloured sheets; these must go to all the bedrooms of the house. They make the guy change the sheets every day? Well, maybe people were a lot dirtier back then."
     },
     {
       "name": "Table",
-      "description": "This is a perfectly ordinary bedside table.",
-      "position": "5"
+      "description": "This is a perfectly ordinary bedside table."
     },
     {
       "name": "Tea",
-      "description": "This tea table is littered with small, square packets that presumably contain loose tea. Flavours are written on the front of each bag – you see at least one of every flavour you can imagine – and on the back, you see something that almost looks like a barcode, only it's got circles as well as stripes in it. Would they have even had barcodes back then?",
-      "position": "5"
+      "description": "This tea table is littered with small, square packets that presumably contain loose tea. Flavours are written on the front of each bag – you see at least one of every flavour you can imagine – and on the back, you see something that almost looks like a barcode, only it's got circles as well as stripes in it. Would they have even had barcodes back then?"
     },
     {
       "name": "Vases",
-      "description": "The vases have no interesting patterns on them, but they are an unusual shape. Both of them have a distinct heart shape to them. One of the vases is full of flowers, but the other contains only one.",
-      "position": "8"
+      "description": "The vases have no interesting patterns on them, but they are an unusual shape. Both of them have a distinct heart shape to them. One of the vases is full of flowers, but the other contains only one."
     },
     {
       "name": "Vent",
       "description": "You can't see where this vent would lead, though the extra musty smell makes you suspect the attic. You can't exactly crawl through to find out, though, because there's a solid grate blocking it off. Looking closely at this grate, you think you see a tinge of colour to them, like someone's taken a crayon and drawn a line along each bar of the grate. There are four bars, each lined with a different colour- going top to bottom, there's pink, purple, yellow and white. And while you examine these, something makes you jump back- a knocking, coming from the other side of the grate. The first one is loud enough to give you a shock, but then a second one comes and it's a bit softer. Then a third, so soft you can barely hear it. Then in quick succession come four very echoey ones.",
-      "dependantOn": "Moving the bed now that all its wheels are attached",
-      "position": "W1"
+      "dependantOn": "Moving the bed now that all its wheels are attached"
     },
     {
       "name": "Wardrobe",
-      "description": "It's a simple old closet where you'd store your clothes, only perhaps there's something more valuable inside, because there's an old-fashioned combination lock holding the handles shut.",
-      "position": "3"
+      "description": "It's a simple old closet where you'd store your clothes, only perhaps there's something more valuable inside, because there's an old-fashioned combination lock holding the handles shut."
     }
   ],
   "actions": {
@@ -225,13 +207,3 @@ const room = {
     ]
   }
 }
-
-function App() {
-  return (
-    <main>
-      <RoomExplorer room={room}></RoomExplorer>
-    </main>
-  );
-}
-
-export default App;
